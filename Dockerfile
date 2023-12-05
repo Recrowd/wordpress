@@ -3,6 +3,7 @@
 FROM wordpress:5.3.2-apache
 
 RUN apt-get update && apt-get install -y magic-wormhole
+RUN apt-get install nano
 
 RUN usermod -s /bin/bash www-data
 RUN chown www-data:www-data /var/www
